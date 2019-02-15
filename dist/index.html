@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>
+        AleksandrMatyka
+    </title>
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+
+    <div class="top">
+        <div class="budget">
+            <div class="budget__title">
+                Доступный бюджет на: <span class="budget__title--month">%Month%</span>
+            </div>
+
+            <div class="budget__value">Итого</div>
+
+            <div class="budget__income clearfix">
+                <div class="budget__income--text">Прибыль</div>
+                <div class="right">
+                    <div class="budget__income--value">+ 0 грн</div>
+                </div>
+            </div>
+
+            <div class="budget__expenses clearfix">
+                <div class="budget__expenses--text">Траты</div>
+                <div class="right clearfix">
+                    <div class="budget__expenses--value">- 0 грн</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <select class="add__type">
+                    <option value="income" selected>прибыль</option>
+                    <option value="expense">Траты</option>
+                </select>
+                <input type="text" id="descrip" class="add__description" placeholder="заполните поле(описание)">
+                <!---->
+                <input type="number" id="val" class="add__value" min="0" placeholder="сумма (грн)">
+                <button id="getBtn" class="add__btn"><i class="ion-ios-checkmark-outline"></i>
+                    <p>Подтвердить</p>
+                </button>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="income">
+                <h2 class="icome__title">Прибыль</h2>
+                <div class="income__list">
+                </div>
+            </div>
+            <div class="expenses">
+                <h2 class="expenses__title">Траты</h2>
+                <div class="expenses__list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
